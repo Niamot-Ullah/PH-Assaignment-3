@@ -17,14 +17,27 @@
     .font{
         font-family: "Sora", serif;
     }
+    #animation{
+        background: linear-gradient(to right,#fc72ff,#8f86ff,#487bff,#8f68ff,#fc72ff);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 2.5s linear infinite;
+    }
+    @keyframes animate-gradient {
+        to{
+            background-position: 200%;
+        }
+    }
 </style>
 </head>
 <body class="font">
 <!-- header section starts here  -->
-    <header class="py-5 w-full lg:w-11/12 mx-auto">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
 <!-- navbar section  -->
-        <nav >
-            <div class="navbar bg-base-100">
+        <nav class="py-5 w-full lg:w-11/12 mx-auto ">
+            <div class="navbar ">
 
                 <div class="navbar-start">
                   <img src="c2-assets/logo-header.png" alt="" class="w-fit">
@@ -63,6 +76,12 @@
               </div>
         </nav>
 
+<!-- Banner section  -->
+        <section class="py-5 mt-20 text-center ">
+            <h1 id="animation" class="text-3xl lg:text-5xl font-semibold ">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+            <p class="my-6 px-5 text-base lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples,<br> we’ve got you covered every day!</p>
+            <div class="w-fit justify-self-center -mb-5"><img src="c2-assets/hero-vegetables.png" alt="" class=""></div>
+        </section>
 
 
 
